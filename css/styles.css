@@ -214,11 +214,12 @@ ol {
   padding: 188px 0;
   text-align: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
 }
 
 .title {
+  display: block;
   max-width: 496px;
 }
 
