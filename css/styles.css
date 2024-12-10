@@ -267,6 +267,7 @@ ol {
   align-items: center;
   justify-content: space-around;
   gap: 24px;
+  position: relative;
 }
 
 .strategy-list-item {
@@ -382,18 +383,23 @@ ol {
 }
 
 .strategy-icons {
-  display: block;
   width: 100%;
   height: 112px;
   background-color: #f4f4fd;
   border: 2px solid #8e8f99;
   border-radius: 4px;
+  text-align: center;
+  border: 1px dashed green;
+  position: relative;
 }
 
 .sprite-item {
-  display: flexbox;
-  align-items: center;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+  fill: red;
+  border: 15px dashed salmon;
 }
