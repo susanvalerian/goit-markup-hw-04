@@ -394,6 +394,7 @@ ol {
 }
 
 .sprite-item {
+  width: 33px !important;
   margin: 0;
   position: absolute;
   top: 50%;
