@@ -245,6 +245,7 @@ ol {
   color: white;
   cursor: pointer;
   border-radius: 4px;
+  box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 15%);
 }
 
 .press-me:hover,
@@ -252,6 +253,7 @@ ol {
 .press-me:focus {
   background-color: #404bbf;
   color: #2e2f42;
+  box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 55%);
 }
 
 .strategy-section {
@@ -320,6 +322,14 @@ ol {
   background-color: white;
   flex-basis: calc((100% - 24px * 3) / 4);
   border-radius: 0 0 4px 4px;
+  box-shadow: 2px 4px 6px 0 rgba(46, 47, 68, 20%);
+}
+
+.our-team-list-item:hover,
+.our-team-list-item:focus,
+.our-team-list-item:active {
+  box-shadow: 4px 2px 2px 0 rgba(46, 47, 68, 20%),
+    2px 4px 4px 0 rgba(46, 47, 66, 16%), 2px 4px 6px 0 rgba(46, 47, 68, 20%);
 }
 
 .name-position {
@@ -341,6 +351,7 @@ ol {
   width: 40px;
   height: 40px;
   position: relative;
+  transition-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
 }
 
 .team-icons {
@@ -351,6 +362,7 @@ ol {
   width: 50%;
   height: 50%;
   fill: white;
+  transition-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
 }
 
 .icon-team-back:hover,
@@ -358,7 +370,7 @@ ol {
 .icon-team-back:active {
   background-color: white;
   transition: 250ms;
-  transition-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
+  box-shadow: 2px 4px 6px 0 rgba(46, 47, 68, 30%);
 }
 
 .team-icons:hover,
@@ -366,7 +378,8 @@ ol {
 .team-icons:active {
   fill: #4d5ae5;
   transition: 250ms;
-  transition-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
+  width: 70%;
+  height: 70%;
 }
 
 .portofolio-section {
