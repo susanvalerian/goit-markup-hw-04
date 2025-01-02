@@ -122,7 +122,6 @@ ol {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 0;
 }
 
 .logo {
@@ -133,7 +132,6 @@ ol {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
-  color: #4d5ae5;
   margin-right: 76px;
 }
 
@@ -155,6 +153,24 @@ ol {
   font-weight: 500;
   letter-spacing: 0.02em;
   padding: 24px 0;
+  position: relative;
+  color: #404bbf;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigator-list-item:hover {
+  color: green;
+}
+
+.navigator-list-item::after {
+  content: " ";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
 }
 
 .where-to-find-list {
